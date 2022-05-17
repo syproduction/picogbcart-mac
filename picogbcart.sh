@@ -1,5 +1,5 @@
 #!/bin/bash
-
+xcode-select --install
 cd ~
 mkdir picogbcart
 cd picogbcart 
