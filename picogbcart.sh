@@ -1,5 +1,22 @@
 #!/bin/bash
+read -r -p "Install XCODE CLI? [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+echo -e "\e[1;36m OK INSTALLING XCODE CLI  \e[0m"
 xcode-select --install
+else
+echo -e "\e[1;36m SKIPPING  \e[0m"
+fi
+
+ead -r -p "XCODE TOOLS INSTALLED NOW?" response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+echo -e "\e[1;36m OK CONTINUE  \e[0m"
+else
+echo -e "\e[1;36m NEVERMIND  \e[0m"
+fi
+
+
 cd ~
 mkdir picogbcart
 cd picogbcart 
