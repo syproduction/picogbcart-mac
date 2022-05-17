@@ -3,6 +3,7 @@
 cd ~
 mkdir picogbcart
 cd picogbcart 
+git clone https://github.com/0xen/PICO-GB-CART
 mv ~/picogbcart/PICO-GB-CART/third_party/gbdk  ~/picogbcart/PICO-GB-CART/third_party/gbdk-win 
 git clone https://github.com/gbdk-2020/gbdk-2020
 mv gbdk-2020 gbdk
